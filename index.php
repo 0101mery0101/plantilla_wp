@@ -1,4 +1,4 @@
-
+!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -25,11 +25,69 @@
         <!-- Begin page -->
         <div id="layout-wrapper">
             <div class="header-border"></div>
-           <?php
-           include("include/menu.php");
-           ?>
+            <?php
+            include("include/menu.php")
+            ?>
 
-           
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+
+                <div data-simplebar class="h-100">
+
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo">
+                            <i class="mdi mdi-album"></i>
+                            <span>
+                               Mery store
+                            </span>
+                        </a>
+                    </div>
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+                            <li class="menu-title">Menu</li>
+
+                            <li>
+                                <a href="index.html" class="waves-effect"><i class="mdi mdi-home-analytics"></i><span
+                                        class="badge badge-pill badge-primary float-right">7</span><span>Inicio</span></a>
+                            </li>
+
+                            <li>
+                                <a href="producto.php" class="has-arrow waves-effect"><i
+                                        class="mdi mdi-diamond-stone"></i><span>Categorias de Producto</span></a>
+                                
+                            </li>
+
+                            <li>
+                                <a href="producto.html" class="has-arrow waves-effect"><i
+                                    class="mdi mdi-diamond-stone"></i><span>Tienda fisica</span></a>
+                            </li>
+
+                            <li>
+                                <a href="producto.html" class="has-arrow waves-effect"><i
+                                    class="mdi mdi-diamond-stone"></i><span>Ventas</span></a>
+                            </li>
+
+                            <li>
+                                <a href="producto.html" class="has-arrow waves-effect"><i
+                                    class="mdi mdi-diamond-stone"></i><span>Pedidos</span></a>
+                            </li>
+
+                            <li>
+                                <a href="producto.html" class="has-arrow waves-effect"><i
+                                    class="mdi mdi-diamond-stone"></i><span>Caatalogo</span></a>
+                            </li>
+
+                            <li class="menu-title">Salir</li>
+
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
 
             <!-- ============================================================== -->
             <!-- Start right Content here -->
@@ -59,8 +117,7 @@
 
                     </div> <!-- container-fluid -->
                     <div>
-                        <div class="page-title-box d-flex align-items-center justify-content-between">
-                        <div class="row">
+                    <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
@@ -98,26 +155,50 @@
                             </div> <!-- end card-->
                         </div> <!-- end col -->
                     </div>
-                        <div class="container-fluid row">
-                            <?php for ($i=0; $i < 12; $i++){
-                                ?>
-                        <div class="col-lg-2 col-md-3 col-sm-6 " style="width: 18rem;">
-                            <img src="imagen/image-aa.webp" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Zapatillas Urbanas Mujer Chunky Alessia BN Talla 37 Precio/99</p>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imagen/652039470b40a11.jpeg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagen/22222.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagen/maxresdefault.jpg" class="d-block w-100" alt="...">
+                              </div>
                             </div>
-                           
+                            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </button>
                           </div>
-                          <?php } ?>
-                         
+                    
                 </div>
-            </div>
-            
                 <!-- End Page-content -->
 
-               <?php
-               include("include/pie_pagina.php")
-               ?>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                2020 © Xeloro.
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-right d-none d-sm-block">
+                                    Design & Develop by Myra
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
 
             </div>
             <!-- end main content-->
